@@ -1,0 +1,22 @@
+.container{
+    margin: auto;
+    max-width: 90%;
+    font-family: sans-serif;
+    background: url("https://images.rivian.com/2md5qhoeajym/1GsZqMnU6h1XADrarnYVTG/db673c5103a23e4617120673cd6842ac/Homepage_-_Image_Carousel_-_Slide_1_desktop.jpg?fm=webP");
+    height: 1500px;
+}
+.navContainerStyle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: none;
+}
+.navContainerStyle:hover{
+    background-color: #fff;
+}
+.navElementStyle{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
