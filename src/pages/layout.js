@@ -11,6 +11,11 @@ const Layout = ({ pageTitle, children }) => {
       <StaticImage class={headerImage}
           alt="Mountins"
           src="https://images.rivian.com/2md5qhoeajym/1GsZqMnU6h1XADrarnYVTG/db673c5103a23e4617120673cd6842ac/Homepage_-_Image_Carousel_-_Slide_1_desktop.jpg?fm=webP"
+          
+          />
+          <StaticImage 
+          alt="Truck assmebly line"
+          src="https://images.rivian.com/2md5qhoeajym/3LXNrO8Q8QzpToovYBpXD9/239bc51a0ce5a86207d41729d9abd166/2.jpg?fm=webP"
           />
         <div class={navContainerStyle}>
         <img src="https://images.rivian.com/2md5qhoeajym/57NSS2kAXCVoGLLPAgbLcG/898d1b6e94f24ce50ea243d56913fb6c/header_logo.svg" alt="Rivian Logo"></img>
@@ -22,7 +27,7 @@ const Layout = ({ pageTitle, children }) => {
           <li class={menuItemStyle}>Fleet</li>
         </ul>
         </nav>
-        <h2>Sign In</h2>
+        <p>Sign In</p>
         </div>
       </header>
       <main>
