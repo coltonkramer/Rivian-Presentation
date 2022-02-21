@@ -20,7 +20,7 @@ const Carousel = () => {
                 <div className="left" onClick={()=>{
                     setCurrentImage(()=>{
                         if (currentImage === 0){
-                            return images.length;
+                            return images.length - 1;
                         }
                         else{
                             return currentImage - 1;
@@ -32,7 +32,7 @@ const Carousel = () => {
             <div><span>{images[currentImage].value}</span>/4</div>
             <div className="right" onClick={()=>{
                     setCurrentImage(()=>{
-                        if (currentImage === images.length){
+                        if (currentImage === images.length - 1){
                             return 0;
                         }
                         else{
