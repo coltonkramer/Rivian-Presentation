@@ -9,7 +9,7 @@ body{
     font-family: sans-serif;
     /* background: url("https://images.rivian.com/2md5qhoeajym/1GsZqMnU6h1XADrarnYVTG/db673c5103a23e4617120673cd6842ac/Homepage_-_Image_Carousel_-_Slide_1_desktop.jpg?fm=webP"); */
 }
-.navBar{
+.headerContainer{
     position: relative;
     width: 100%;
 }
