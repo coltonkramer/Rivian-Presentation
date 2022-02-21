@@ -41,6 +41,13 @@ body{
     height: 700px;
     position: relative;
 }
+.heroImage{
+    height: 125%;
+    width: 100%;
+    /* position:absolute; */
+    bottom:0;
+    
+}
 .navArrows{
     background-color: rgba(0, 0, 0, .9);
     width: 100px;
@@ -48,12 +55,8 @@ body{
     display: flex;
     flex-direction: row;
     position: absolute;
-    right: 0;
-    bottom: 10;
-}
-.heroImage{
-    width: 100%;
-    
+    right: 25px;
+    bottom: 25px;
 }
 .navArrows div{
     display: flex;

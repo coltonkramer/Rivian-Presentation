@@ -1,19 +1,26 @@
 // Step 1: Import React
-import * as React from 'react'
-import Navigation from '../components/navigation.js'
-
-
-
+import * as React from "react";
+import { Helmet } from "react-helmet"
+import Navigation from "../components/navigation.js";
 
 // Step 2: Define your component
 const IndexPage = () => {
   return (
     <div>
-  <Navigation/>
-  </div>
-  )
-}
+      <Helmet lang="en">
+          <meta charSet="utf-8" />
+          <title>Rivian | Mock Homepage</title>
+          
+        </Helmet>
+      <div>
+        <Navigation />
+      </div>
+      <main>
+        <p>This is some sample text</p>
+      </main>
+    </div>
+  );
+};
 
 // Step 3: Export your component
-export default IndexPage
-
+export default IndexPage;
