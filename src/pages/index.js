@@ -10,6 +10,7 @@ const IndexPage = () => {
       <Helmet lang="en">
           <meta charSet="utf-8" />
           <title>Rivian | Mock Homepage</title>
+          <descripton>A rebuild of the rivian homepage and product catalog for a presentation</descripton>
           
         </Helmet>
       <div>
