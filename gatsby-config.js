@@ -1,6 +1,9 @@
 module.exports = {
     siteMetadata: {
-        siteUrl: `https://www.yourdomain.tld`,
+        title: `Rivian | Mockbuild`,
+        description: `A rebuild of the rivian homepage and product catalog for a presentation`,
+        author: `Colton Kramer`,
+    // siteUrl: `https://www.emgoto.com`,
     },
     plugins: [
         "gatsby-plugin-image",
