@@ -1,28 +1,24 @@
-import React,{useState,useEffect} from 'react';
-
+import React from "react";
+import { gear } from "../data/gear.js";
+// import "../images";
 
 const Gear = () => {
-    const [data,setData]=useState([]);
-    const getData=()=>{
-      fetch('../data/gear.json')
-        .then(function(response){
-          console.log(response)
-          return response.json();
-        })
-        .then(function(myJson) {
-          console.table(myJson);
-          setData(myJson)
-        });
-    }
-    useEffect(()=>{
-      getData()
-    },[])
-    return (
-      <div >
-       
-      </div>
-    );
-}
+  console.table(gear);
+  return (
+    <div>
+      
+       {gear.map((gearDetail) => {
+        return (
+          <div>
+            <h1>{gearDetail.name}</h1>
+            <h2>{gearDetail.price}</h2>
+            <img src={gearDetail["image-main"]} alt={gearDetail.key} width="200px"></img>
+            <img src={gearDetail["image-hover"]} alt={gearDetail.key} width="200px"></img>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
 
-// Step 3: Export your component
 export default Gear;

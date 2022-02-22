@@ -8,10 +8,13 @@ import Gear from "../components/product-container.js"
 const IndexPage = () => {
   return (
     <div>
+
+    <div>
       <Seo />
       <div>
         <Navigation />
       </div>
+    </div>
       <main>
         <Gear/>
       </main>

@@ -8,6 +8,7 @@ body {
     padding: 0;
     max-width: 100%;
     font-family: sans-serif;
+    height: 900px;
 }
 
 .headerContainer {
