@@ -1,0 +1,8 @@
+{
+    "gear" : [
+        {"name": "Hometown Hoodie", "price": "$95", "image-main": "../images/hometown-hoodie-main.webp", "image-hover": "../images/hometown-hoodie-hover.webp"},
+        {"name": "Hometown Crewneck", "price": "$85", "image-main": "../images/hometown-hoodie-main.webp", "image-hover": "../images/hometown-hoodie-hover.webp"},   
+        {"name": "Minimalist Beanie", "price": "$35", "image-main": "../images/minimalist-beanie-main.jpg", "image-hover": "../images/minimalist-beanie-hover.jpg"},   
+        {"name": "Adventurous T-Shirt", "price": "$35", "image-main": "../images/adventurous-t-shirt-main.webp", "image-hover": "../images/adventurous-t-shirt-hover.webp"}  
+    ]
+}
