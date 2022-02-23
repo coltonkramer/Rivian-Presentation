@@ -7,18 +7,20 @@ import Gear from "../components/product-container.js"
 // Step 2: Define your component
 const IndexPage = () => {
   return (
-    <div>
+    <>
 
-    <div>
-      <Seo />
-      <div>
+    <head>
+      <Seo/>
+    </head>
+      <section>
         <Navigation />
-      </div>
-    </div>
+      </section>
       <main>
+        <section>
         <Gear/>
+        </section>
       </main>
-    </div>
+    </>
   );
 };
 

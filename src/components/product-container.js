@@ -1,19 +1,33 @@
 import React from "react";
 import { gear } from "../data/gear.js";
-// import "../images";
+import { gearItem, gearContainer, gearItemHover } from "./style.module.css";
 
 const Gear = () => {
-  console.table(gear);
+  // console.table(gear);
+
   return (
-    <div>
-      
-       {gear.map((gearDetail) => {
+    <div className={gearContainer}>
+      {gear.map((gearDetail) => {
+        let imageMain = gearDetail["image-main"];
+        let imageHover = gearDetail["image-hover"];
+
+        const gearMainStyle = {
+          backgroundImage: "url(" + imageMain + ")",
+        };
+        const gearHoverStyle = {
+          backgroundImage: "url(" + imageHover + ")",
+        };
+
         return (
           <div>
-            <h1>{gearDetail.name}</h1>
-            <h2>{gearDetail.price}</h2>
-            <img src={gearDetail["image-main"]} alt={gearDetail.key} width="200px"></img>
-            <img src={gearDetail["image-hover"]} alt={gearDetail.key} width="200px"></img>
+            <article className={gearItem} style={gearMainStyle}>
+              <p style={{ backgroundColor: "lightblue" }}>{gearDetail.name}</p>
+              <p>{gearDetail.price}</p>
+            </article>
+            <article className={gearItemHover} style={gearHoverStyle}>
+            <p style={{ backgroundColor: "lightblue" }}>{gearDetail.name}</p>
+              <p>{gearDetail.price}</p>
+            </article>
           </div>
         );
       })}
