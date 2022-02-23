@@ -4,6 +4,8 @@ import Seo from "react-helmet";
 import Navigation from "../components/navigation.js";
 import Gear from "../components/product-container.js"
 
+
+
 // Step 2: Define your component
 const IndexPage = () => {
   return (

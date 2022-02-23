@@ -79,26 +79,33 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1px;
+    grid-auto-rows: 1fr .05fr;
+    gap: 2em;
+    /* position: relative; */
+}
+.article-container{
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    /* width: 100%;  */
+    box-sizing: inherit; 
+    margin: 0 auto;
+    position: relative;
 }
 .gearItem, .gearItemHover{
-    background-size: 100%;
-    background-repeat: no-repeat;
+    position: absolute;
     width: 100%;
-    height: 300px;
-    margin: 2%;
-    border: 1px solid black;
-}
-.gearItem:hover{
-    display: none;
+    height: 100%;
 }
 .gearItemHover{
-    display: none;
     z-index: -1;
 }
-.gearItemHover{
-    display: block;
+.gearItem:hover{
+    opacity: 0;
 }
-
+.gearItemImage{
+    width:100%;
+    /* height: 100%; */
+}
 
 

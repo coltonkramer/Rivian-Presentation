@@ -1,6 +1,6 @@
 import React from "react";
 import { gear } from "../data/gear.js";
-import { gearItem, gearContainer, gearItemHover } from "./style.module.css";
+import { gearItem, gearContainer, gearItemHover, gearItemImage, articleContainer } from "./style.module.css";
 
 const Gear = () => {
   // console.table(gear);
@@ -11,22 +11,17 @@ const Gear = () => {
         let imageMain = gearDetail["image-main"];
         let imageHover = gearDetail["image-hover"];
 
-        const gearMainStyle = {
-          backgroundImage: "url(" + imageMain + ")",
-        };
-        const gearHoverStyle = {
-          backgroundImage: "url(" + imageHover + ")",
-        };
-
         return (
-          <div>
-            <article className={gearItem} style={gearMainStyle}>
-              <p style={{ backgroundColor: "lightblue" }}>{gearDetail.name}</p>
+          <div className={articleContainer}>
+            <article className={gearItem}>
+              <img src={imageMain} class = {gearItemImage} alt=""></img>
+              <div>
+              <p>{gearDetail.name}</p>
               <p>{gearDetail.price}</p>
+              </div>
             </article>
-            <article className={gearItemHover} style={gearHoverStyle}>
-            <p style={{ backgroundColor: "lightblue" }}>{gearDetail.name}</p>
-              <p>{gearDetail.price}</p>
+            <article className={gearItemHover}>
+            <img src={imageHover} class = {gearItemImage} alt=""></img>
             </article>
           </div>
         );
