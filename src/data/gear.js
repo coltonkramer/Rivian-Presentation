@@ -7,6 +7,12 @@ import MinimalistBeanieMain from "/src/images/minimalist-beanie-main.jpg"
 import MinimalistBeanieHover from "/src/images/minimalist-beanie-hover.jpg"
 import AdventurousTshirtMain from "/src/images/adventurous-t-shirt-main.webp"
 import AdventurousTshirtHover from "/src/images/adventurous-t-shirt-hover.webp"
+import RecoveryKitMain from "/src/images/recover-kit-main.jpg"
+import RecoveryKitHover from "/src/images/recover-kit-hover.jpg"
+import CampKitchenMain from "/src/images/camp-kitchen-main.webp"
+import CampKitchenHover from "/src/images/camp-kitchen-hover.webp"
+import CargoCrossbarMain from "/src/images/cargo-crossbar-main.webp"
+import CargoCrossbarHover from "/src/images/cargo-crossbar-hover.webp"
 
 
 
@@ -23,7 +29,7 @@ export const gear = [
     },
     {
         "key": "1",
-        "name": "Hometown Crewneck",
+        "name": "Hometown Crewneck Sweatshirt",
         "price": "$85",
         "image-main": HometownCrewneckMain,
         "image-hover": HometownCrewHover
@@ -41,5 +47,26 @@ export const gear = [
         "price": "$35",
         "image-main": AdventurousTshirtMain,
         "image-hover": AdventurousTshirtHover
-    }
+    },
+    {
+        "key": "4",
+        "name": "Off-Road Recovery Kit",
+        "price": "$600",
+        "image-main": RecoveryKitMain,
+        "image-hover": RecoveryKitHover
+    },
+    {
+        "key": "5",
+        "name": "Rivian Camp Kitchen x Snow Peak Package",
+        "price": "",
+        "image-main": CampKitchenMain,
+        "image-hover": CampKitchenHover
+    },
+    {
+        "key": "6",
+        "name": "Cargo Crossbars",
+        "price": "$450",
+        "image-main": CargoCrossbarMain,
+        "image-hover": CargoCrossbarHover
+    },
 ]

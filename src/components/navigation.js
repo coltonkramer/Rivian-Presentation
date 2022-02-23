@@ -12,6 +12,7 @@ const Navigation = () => {
   return (
     <div class={container}>
       <header class={headerContainer}>
+        {/* Get the component for the carousel and puts it here */}
         <Carousel />
         <div class={navContainerStyle}>
           <img

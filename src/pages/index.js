@@ -10,15 +10,19 @@ import Gear from "../components/product-container.js"
 const IndexPage = () => {
   return (
     <>
-
+  
     <head>
+      {/* Meta info for the website     */}
       <Seo/>
     </head>
       <section>
+        {/* Component for the nav bar */}
         <Navigation />
       </section>
       <main>
         <section>
+        <h1>Gear Shop</h1>
+          {/* Component for the gear shop */}
         <Gear/>
         </section>
       </main>
