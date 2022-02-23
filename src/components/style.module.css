@@ -81,7 +81,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1px;
 }
-.gearItem{
+.gearItem, .gearItemHover{
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -92,5 +92,13 @@ body {
 .gearItem:hover{
     display: none;
 }
+.gearItemHover{
+    display: none;
+    z-index: -1;
+}
+.gearItemHover{
+    display: block;
+}
+
 
 
