@@ -60,9 +60,8 @@ body {
 }
 
 .heroImage {
-    height: 135%;
+    height: 135%; 
     width: 100%;
-    bottom: 0;
 
 }
 .carouselNavigation{
