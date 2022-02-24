@@ -27,18 +27,11 @@ const Navigation = () => {
           {/* The nav buttons live in this container */}
           <nav>
             <ul className={navElementStyle}>
-              <a href="https://rivian.com/r1t">
-                <li key="nav0" className={menuItemStyle}>R1T</li>
-              </a>
-              <a href="https://rivian.com/r1s">
-                <li key="nav1" className={menuItemStyle}>R1S</li>
-              </a>
-              <a href="https://rivian.com/gear-shop">
-                <li key="nav2" className={menuItemStyle}>Gear Shop</li>
-              </a>
-              <a href="https://rivian.com/fleet">
-                <li key="nav3" className={menuItemStyle}>Fleet</li>
-              </a>
+              
+                <li key="nav0" className={menuItemStyle}><a href="https://rivian.com/r1t">R1T</a></li>
+                <li key="nav1" className={menuItemStyle}><a href="https://rivian.com/r1s">R1S</a></li>
+                <li key="nav2" className={menuItemStyle}><a href="https://rivian.com/gear-shop">Gear Shop</a></li>
+                <li key="nav3" className={menuItemStyle}><a href="https://rivian.com/fleet">Fleet</a></li>
             </ul>
           </nav>
           {/* The sign in button */}

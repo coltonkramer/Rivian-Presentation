@@ -1,6 +1,6 @@
 // Step 1: Import React
 import * as React from "react";
-import Seo from "react-helmet";
+import Seo from "../components/helmet.js";
 import Navigation from "../components/navigation.js";
 import Gear from "../components/product-container.js"
 import Footer from "../components/footer.js"

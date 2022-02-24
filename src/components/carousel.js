@@ -42,9 +42,8 @@ const Carousel = () => {
         title={images[currentImage].title}
       ></img>
       <div className={navArrows}>
-        <div
-          className="left"
-          role="button"
+        <button
+          className="leftArrowContainer"
           tabIndex={0}
           onKeyDown={this}
           onClick={() => {
@@ -82,13 +81,12 @@ const Carousel = () => {
               strokeLinejoin="round"
             ></line>
           </svg>
-        </div>
+        </button>
         <div>
           <span>{images[currentImage].value}</span>/4
         </div>
-        <div
-          className="right"
-          role="button"
+        <button
+          className="rightArrowContainer"
           tabIndex={0}
           onKeyDown={this}
           onClick={() => {
@@ -127,7 +125,7 @@ const Carousel = () => {
               strokeLinejoin="round"
             ></line>
           </svg>
-        </div>
+        </button>
       </div>
     </div>
   );

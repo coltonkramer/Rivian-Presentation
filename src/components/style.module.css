@@ -65,14 +65,18 @@ body {
     color: #fff;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
     right: 25px;
-    bottom: 25px;
+    bottom: -75px;
 }
-.navArrows div {
+.navArrows button {
     display: flex;
     align-items: center;
     padding: 5px;
+    background-color: rgba(0, 0, 0, .9);
+    border: none;
 }
 
 
