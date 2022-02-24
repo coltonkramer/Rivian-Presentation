@@ -13,6 +13,17 @@ import CampKitchenMain from "/src/images/camp-kitchen-main.webp"
 import CampKitchenHover from "/src/images/camp-kitchen-hover.webp"
 import CargoCrossbarMain from "/src/images/cargo-crossbar-main.webp"
 import CargoCrossbarHover from "/src/images/cargo-crossbar-hover.webp"
+import CompassCrewneckMain from "/src/images/compass-crewneck-main.webp"
+import CompassCrewneckHover from "/src/images/compass-crewneck-hover.webp"
+import CompassHatMain from "/src/images/compass-hat-main.webp"
+import CompassHatHover from "/src/images/compass-hat-hover.webp"
+import CompassPocketMain from "/src/images/compass-pocket-main.webp"
+import CompassPocketHover from "/src/images/compass-pocket-hover.webp"
+import CompassTMain from  "/src/images/compass-t-main.webp"
+import CompassTHover from  "/src/images/compass-t-hover.webp"
+import WomensCrewMain from "/src/images/womens-compass-crewneck-main.webp"
+import WomensCrewHover from "/src/images/womens-compass-crewneck-hover.webp"
+
 
 
 
@@ -75,5 +86,45 @@ export const gear = [
         "image-main": CargoCrossbarMain,
         "image-hover": CargoCrossbarHover,
         "id": "article6"
+    },
+    {
+        "key": "7",
+        "name": "Compass Crewneck Sweatshirt",
+        "price": "$75",
+        "image-main": CompassCrewneckMain,
+        "image-hover": CompassCrewneckHover,
+        "id": "article7"
+    },
+    {
+        "key": "8",
+        "name": "Compass Hat",
+        "price": "$35",
+        "image-main": CompassHatMain,
+        "image-hover": CompassHatHover,
+        "id": "article8"
+    },
+    {
+        "key": "9",
+        "name": "Compass Pocket T-Shirt",
+        "price": "$35",
+        "image-main": CompassPocketMain,
+        "image-hover": CompassPocketHover,
+        "id": "article9"
+    },
+    {
+        "key": "10",
+        "name": "Compass T-Shirt",
+        "price": "$450",
+        "image-main": CompassTMain,
+        "image-hover": CompassTHover,
+        "id": "article10"
+    },
+    {
+        "key": "11",
+        "name": "Women's Compass Crewneck",
+        "price": "$75",
+        "image-main": WomensCrewMain,
+        "image-hover": WomensCrewHover,
+        "id": "article11"
     },
 ]

@@ -1,5 +1,5 @@
 import React from "react";
-import { carousel, navArrows, heroImage } from "./style.module.css";
+import { carousel, navArrows, heroImage, carouselDescription, carouselNavigation } from "./style.module.css";
 
 // import { StaticImage } from 'gatsby-plugin-image'
 import { useState } from "react";
@@ -20,27 +20,37 @@ const images = [
   {
     title: "Cafe",
     subtitle: "Preserving the natural world. Forever.",
-    img: "https://images.rivian.com/2md5qhoeajym/3Zv068QmGvRcdZmPUkZgnd/24e8d377ed9339ac7db29e8b613f9633/Home_-_Spaces_-_Venice_-_mobile.jpg?w=768&fm=webp",
+    img: "https://images.rivian.com/2md5qhoeajym/O8I8PXKUbyi8FqKqWj3ib/01e2a366e911cd8857584846dcb0fdd7/3.jpg?fm=webP",
     value: "3",
   },
   {
     title: "Interior",
-    subtitle: "The world’s first electric truck on the assembly line.",
-    img: "https://images.rivian.com/2md5qhoeajym/4cYIxgFfvYSq4zIAqQNFSG/81320b7d04ebf6ac2fd3f24c699bf1a6/GearGuard-Thumbnail-mobile.jpg?w=768&fm=webp",
+    subtitle: "Coming Together to build the future.",
+    img: "https://images.rivian.com/2md5qhoeajym/7warGbZSv8vKMh27b0HKcm/ddeec8367e44b2573906ff96cb40595a/4.jpg?fm=webP",
     value: "4",
   },
 ];
-
+// Create the carousel component
 const Carousel = () => {
+  // Use a use state to keep track of which image is being displayed
+  // Defaults to 0 images i.e. the first image in the array
   const [currentImage, setCurrentImage] = useState(0);
+
   return (
+    // Returns the div holding the carousel component
     <div className={carousel}>
+      {/* Creates an image tag that holds all the attribute of the image */}
       <img
         className={heroImage}
         src={images[currentImage].img}
         alt={images[currentImage].subtitle}
         title={images[currentImage].title}
       ></img>
+        <div className={carouselNavigation}>
+          <div className={carouselDescription}>
+          <p>{images[currentImage].subtitle}</p>
+          </div>
+      {/* Container for the arrows to control ther carousel */}
       <div className={navArrows}>
         <button
           aria-label="Carousel Scroll Previous"
@@ -49,14 +59,17 @@ const Carousel = () => {
           onKeyDown={this}
           onClick={() => {
             setCurrentImage(() => {
+              // When we click the button if the carousel usestate is already at 0 we set it to the last item in the array
               if (currentImage === 0) {
                 return images.length - 1;
               } else {
+                // Otherwise we subtract 1 from the currentImage
                 return currentImage - 1;
               }
             });
           }}
         >
+          {/* Uses the svg from the rivian site for the left and right arrows */}
           <svg
             width="24"
             height="24"
@@ -101,6 +114,7 @@ const Carousel = () => {
             });
           }}
         >
+          {/* right arrow svg */}
           <svg
             width="24"
             height="24"
@@ -129,7 +143,9 @@ const Carousel = () => {
           </svg>
         </button>
       </div>
+      </div>
     </div>
   );
 };
+// exports the carousel component imported in navigation.js 
 export default Carousel;

@@ -24,7 +24,7 @@ const IndexPage = () => {
       </section>
       <main>
         <section>
-        <h1>Gear Shop</h1>
+        
           {/* Component for the gear shop */}
         <Gear/>
         </section>

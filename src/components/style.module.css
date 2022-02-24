@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nanum+Gothic:wght@400;700;800&display=swap');
 
 body {
     margin: 0;
@@ -6,7 +6,7 @@ body {
     font-family: 'Nanum Gothic', sans-serif;
 }
 
-/* The Navigation bar section */
+/* The Navigation bar section ----------------------------------------------------------------------------------------------------------------*/
 .container {
     margin: 0 auto;
     padding: 0;
@@ -34,65 +34,90 @@ body {
 }
 .navElementStyle {
     list-style: none;
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: center;
+
 }
 .navElementStyle a{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
     text-decoration: none;
     color: black;
+}
+.navElementStyle a:hover{
+    text-decoration: underline;
 }
 .menuItemStyle {
     padding: 2px 10px;
     margin: 0 15px;
 }
 
-/* The Carousel Section */
+/* The Carousel Section ----------------------------------------------------------------------------------------------------------------*/
 .carousel {
     height: 700px;
     position: relative;
 }
 
 .heroImage {
-    height: 125%;
+    height: 135%;
     width: 100%;
     bottom: 0;
 
 }
-.navArrows {
-    background-color: rgba(0, 0, 0, .9);
-    width: 100px;
-    color: #fff;
+.carouselNavigation{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: absolute;
     right: 25px;
-    bottom: -75px;
+    bottom: -150px;
+    left: 25px;
+    color: #fff;
+
+}
+.carouselDescription p{
+    background-color: rgba(0, 0, 0, .9);
+    padding: 5px;
+    margin: 0;
+}
+.navArrows {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, .9);
 }
 .navArrows button {
     display: flex;
     align-items: center;
     padding: 5px;
-    background-color: rgba(0, 0, 0, .9);
     border: none;
+    background-color: rgba(0, 0, 0, .9);
+
 }
 
-
-/* The gear shop section */
+/* The Gear Shop section --------------------------------------------------------------------------------------------------------*/
+.gearShop{
+    margin-top: 15%;
+}
+.gearShop h1{
+    margin-left: 3%;
+    font-size: 48px;
+}
 .gearContainer{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex: 1 100%;
     flex-wrap: wrap;
-    /* flex: 1 21%; */
     justify-content: space-evenly;
+    font-family: 'Lato', sans-serif;
 }
 .article-container{
-    height: 500px;
-    width: 20%;
-    padding: 2%;
+    height: 275px;
+    padding: .25%;
     display: flex;
     position: relative;
 }
@@ -112,9 +137,14 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 2%;
 }
-/* Section for the footer */
 
+
+/* Section for the footer --------------------------------------------------------------------------------------------------------*/
 .footerStyle{
     display: flex;
     flex-direction: row;
@@ -124,6 +154,7 @@ body {
     font-size: small;
 }
 
+/* Media query -----------------------------------------------------------------------------------------------------------------*/
 @media (min-width: 768px) {
     .gearContainer{
         width: 100%;
@@ -131,5 +162,15 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
     }
+    .navElementStyle{
+        display: flex;
+    }
+    .article-container{
+        width: 20%;
+        height: 325px;
+
+       
+    }
 }
+
 
