@@ -9,11 +9,12 @@ module.exports = {
         "gatsby-plugin-image",
         "gatsby-plugin-sharp",
         "gatsby-plugin-react-helmet",
-        // {
-        //     resolve: `gatsby-source-mongodb`,
-        //     options: { dbName: `local`, collection: `documents` },
-        //     query: { documents: { as_of: { $gte: 1604397088013 } } },
-        //   },
+        {
+            resolve: 'gatsby-plugin-html-attributes',
+            options: {
+              lang: 'en-GB'
+            }
+          }
         
     ],
 };
