@@ -8,25 +8,40 @@ import {
 } from "./style.module.css";
 import Carousel from "./carousel.js";
 
+// Creates a component for the nav bar
 const Navigation = () => {
+  // No logic here so we are just returning the elements
   return (
-    <div class={container}>
-      <header class={headerContainer}>
+    // A container to hold the entire element
+    <div className={container}>
+      {/* Adding a header element for semantics */}
+      <header className={headerContainer}>
         {/* Get the component for the carousel and puts it here */}
         <Carousel />
-        <div class={navContainerStyle}>
+        <div className={navContainerStyle}>
+          {/* Creates an image tag and puts the header logo inside */}
           <img
             src="https://images.rivian.com/2md5qhoeajym/57NSS2kAXCVoGLLPAgbLcG/898d1b6e94f24ce50ea243d56913fb6c/header_logo.svg"
             alt="Rivian Logo"
           ></img>
+          {/* The nav buttons live in this container */}
           <nav>
-            <ul class={navElementStyle}>
-              <li class={menuItemStyle}>R1T</li>
-              <li class={menuItemStyle}>R1S</li>
-              <li class={menuItemStyle}>Gear Shop</li>
-              <li class={menuItemStyle}>Fleet</li>
+            <ul className={navElementStyle}>
+              <a href="https://rivian.com/r1t">
+                <li key="nav0" className={menuItemStyle}>R1T</li>
+              </a>
+              <a href="https://rivian.com/r1s">
+                <li key="nav1" className={menuItemStyle}>R1S</li>
+              </a>
+              <a href="https://rivian.com/gear-shop">
+                <li key="nav2" className={menuItemStyle}>Gear Shop</li>
+              </a>
+              <a href="https://rivian.com/fleet">
+                <li key="nav3" className={menuItemStyle}>Fleet</li>
+              </a>
             </ul>
           </nav>
+          {/* The sign in button */}
           <p>Sign In</p>
         </div>
       </header>
@@ -34,4 +49,5 @@ const Navigation = () => {
   );
 };
 
+// Export the component
 export default Navigation;

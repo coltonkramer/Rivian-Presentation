@@ -25,48 +25,55 @@ export const gear = [
         "name": "Hometown Hoodie",
         "price": "$95",
         "image-main": HometownHoodieMain,
-        "image-hover": HometownHoodieHover
+        "image-hover": HometownHoodieHover,
+        "id": "article0"
     },
     {
         "key": "1",
         "name": "Hometown Crewneck Sweatshirt",
         "price": "$85",
         "image-main": HometownCrewneckMain,
-        "image-hover": HometownCrewHover
+        "image-hover": HometownCrewHover,
+        "id": "article1"
     },
     {
         "key": "2",
         "name": "Minimalist Beanie",
         "price": "$35",
         "image-main": MinimalistBeanieMain,
-        "image-hover": MinimalistBeanieHover
+        "image-hover": MinimalistBeanieHover,
+        "id": "article2"
     },
     {
         "key": "3",
         "name": "Adventurous T-Shirt",
         "price": "$35",
         "image-main": AdventurousTshirtMain,
-        "image-hover": AdventurousTshirtHover
+        "image-hover": AdventurousTshirtHover,
+        "id": "article3"
     },
     {
         "key": "4",
         "name": "Off-Road Recovery Kit",
         "price": "$600",
         "image-main": RecoveryKitMain,
-        "image-hover": RecoveryKitHover
+        "image-hover": RecoveryKitHover,
+        "id": "article4"
     },
     {
         "key": "5",
         "name": "Rivian Camp Kitchen x Snow Peak Package",
         "price": "",
         "image-main": CampKitchenMain,
-        "image-hover": CampKitchenHover
+        "image-hover": CampKitchenHover,
+        "id": "article5"
     },
     {
         "key": "6",
         "name": "Cargo Crossbars",
         "price": "$450",
         "image-main": CargoCrossbarMain,
-        "image-hover": CargoCrossbarHover
+        "image-hover": CargoCrossbarHover,
+        "id": "article6"
     },
 ]

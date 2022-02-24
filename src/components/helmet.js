@@ -1,16 +1,17 @@
 import React from "react";
 import Helmet from "react-helmet";
 
-const Seo = () => (
-  <Helmet
-    htmlAttributes={{
-      lang: "en",
-      title: "Rivian | Mockbuild",
-      description:
-        "A rebuild of the rivian homepage and product catalog for a presentation",
-      author: "Colton Kramer",
-    }}
-  />
-);
+const Seo = () => {
+    return (
+      <div className="App">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>My Title</title>
+          <link rel="canonical" href="#" />
+        </Helmet>
+      </div>
+    );
+
+};
 
 export default Seo;

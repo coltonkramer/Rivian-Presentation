@@ -36,7 +36,7 @@ const Carousel = () => {
   return (
     <div className={carousel}>
       <img
-        class={heroImage}
+        className={heroImage}
         src={images[currentImage].img}
         alt={images[currentImage].subtitle}
         title={images[currentImage].title}
@@ -44,6 +44,9 @@ const Carousel = () => {
       <div className={navArrows}>
         <div
           className="left"
+          role="button"
+          tabIndex={0}
+          onKeyDown={this}
           onClick={() => {
             setCurrentImage(() => {
               if (currentImage === 0) {
@@ -64,9 +67,9 @@ const Carousel = () => {
             <path
               d="M12 20L4 12L12 4"
               stroke="white"
-              stroke-width="2"
-              stroke-linecap="square"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="square"
+              strokeLinejoin="round"
             ></path>
             <line
               x1="5"
@@ -74,9 +77,9 @@ const Carousel = () => {
               x2="21"
               y2="12"
               stroke="white"
-              stroke-width="2"
-              stroke-linecap="square"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="square"
+              strokeLinejoin="round"
             ></line>
           </svg>
         </div>
@@ -85,6 +88,9 @@ const Carousel = () => {
         </div>
         <div
           className="right"
+          role="button"
+          tabIndex={0}
+          onKeyDown={this}
           onClick={() => {
             setCurrentImage(() => {
               if (currentImage === images.length - 1) {
@@ -105,9 +111,9 @@ const Carousel = () => {
             <path
               d="M12 20L20 12L12 4"
               stroke="white"
-              stroke-width="2"
-              stroke-linecap="square"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="square"
+              strokeLinejoin="round"
             ></path>
             <line
               x1="1"
@@ -116,9 +122,9 @@ const Carousel = () => {
               y2="-1"
               transform="matrix(-1 0 0 1 20 13)"
               stroke="white"
-              stroke-width="2"
-              stroke-linecap="square"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="square"
+              strokeLinejoin="round"
             ></line>
           </svg>
         </div>

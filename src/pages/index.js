@@ -3,18 +3,21 @@ import * as React from "react";
 import Seo from "react-helmet";
 import Navigation from "../components/navigation.js";
 import Gear from "../components/product-container.js"
+import Footer from "../components/footer.js"
+
 
 
 
 // Step 2: Define your component
 const IndexPage = () => {
+
+  
   return (
     <>
+    {/* Meta info for the website     */}
+    <Seo/>
   
-    <head>
-      {/* Meta info for the website     */}
-      <Seo/>
-    </head>
+    
       <section>
         {/* Component for the nav bar */}
         <Navigation />
@@ -26,6 +29,10 @@ const IndexPage = () => {
         <Gear/>
         </section>
       </main>
+      <footer>
+        {/* Create the footer component */}
+      <Footer/>
+      </footer>
     </>
   );
 };
