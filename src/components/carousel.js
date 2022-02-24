@@ -43,6 +43,7 @@ const Carousel = () => {
       ></img>
       <div className={navArrows}>
         <button
+          aria-label="Carousel Scroll Previous"
           className="leftArrowContainer"
           tabIndex={0}
           onKeyDown={this}
@@ -86,6 +87,7 @@ const Carousel = () => {
           <span>{images[currentImage].value}</span>/4
         </div>
         <button
+          aria-label="Carousel Scroll Next"
           className="rightArrowContainer"
           tabIndex={0}
           onKeyDown={this}
