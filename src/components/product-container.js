@@ -15,9 +15,11 @@ const Gear = () => {
   return (
     // Create a container to hold our component
     <div className={gearShop}>
-      <h1>All Gear</h1>
+      <h2>All Gear</h2>
       <div className={gearContainer}>
         {/* Get everything out of the javascript object and display it to the screen */}
+
+         {/* A return for our map function which actually returns the content */}
         {gear.map((gearDetail) => {
           // Save gearDeatil elements to variables so we dont
           // need to type them out
@@ -25,8 +27,6 @@ const Gear = () => {
           let imageHover = gearDetail["image-hover"];
           let name = gearDetail.name;
           let price = gearDetail.price;
-
-          // A return for our map function which actually returns the content
           return (
             <div className={articleContainer} key={gearDetail.key}>
               {/* Using an article to hold the product name, price, and images */}

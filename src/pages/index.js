@@ -10,21 +10,16 @@ import Footer from "../components/footer.js"
 
 // Step 2: Define your component
 const IndexPage = () => {
-
-  
   return (
-    <>
+    <div>
     {/* Meta info for the website     */}
     <Seo/>
-  
-    
       <section>
         {/* Component for the nav bar */}
         <Navigation />
       </section>
       <main>
         <section>
-        
           {/* Component for the gear shop */}
         <Gear/>
         </section>
@@ -33,7 +28,7 @@ const IndexPage = () => {
         {/* Create the footer component */}
       <Footer/>
       </footer>
-    </>
+    </div>
   );
 };
 

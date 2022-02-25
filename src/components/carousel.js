@@ -99,6 +99,7 @@ const Carousel = () => {
         <div>
           <span>{images[currentImage].value}</span>/4
         </div>
+        {/* The buitton for the right arrow in the carousel */}
         <button
           aria-label="Carousel Scroll Next"
           className="rightArrowContainer"
